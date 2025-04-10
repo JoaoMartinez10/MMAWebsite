@@ -1,0 +1,303 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(0, 5, 3);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+/* Header/Nav */
+header {
+    background-color: rgba(207, 17, 38);
+    color: white;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #131212;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Headings */
+h1 {
+    padding: 15px;
+}
+
+h2, p {
+    text-align: center;
+}
+
+/* Hero Section */
+.text-with-background {
+    position: relative;
+    background-image: url('Home.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 400px 20px;
+    height: 400px;
+    color: white;
+}
+
+.text-with-background h1,
+.text-with-background p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Buttons */
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 50px 0;
+}
+
+/* Default button styles (Desktop version) */
+.cta-button-green,
+.cta-button-white,
+.cta-button-red {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-button-green {
+    background-color: rgba(0, 99, 65);
+    color: white;
+}
+.cta-button-green:hover {
+    background-color: #023a20;
+    transform: scale(1.05);
+}
+
+.cta-button-white {
+    background-color: white;
+    color: rgb(126, 61, 0);
+}
+.cta-button-white:hover {
+    background-color: #cecccc;
+    transform: scale(1.05);
+}
+
+.cta-button-red {
+    background-color: rgba(207, 17, 38);
+    color: white;
+}
+.cta-button-red:hover {
+    background-color: #801104;
+    transform: scale(1.05);
+}
+
+/* Mobile Version (screens smaller than 768px) */
+@media screen and (max-width: 768px) {
+    .cta-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px; /* Adjust gap for stacking */
+    }
+}
+
+
+/* Social Media Section */
+.socials {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    font-size: 2.5em;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #e74c3c;
+    transform: scale(1.1);
+}
+
+/* Sponsor Page */
+.sponsor-me {
+    text-align: center;
+}
+
+.sponsor {
+    text-align: center;
+    padding: 1%;
+}
+
+.sponsor-color1 {
+    color: rgba(0, 99, 65);
+}
+
+.sponsor-color2 {
+    color: white;
+}
+
+.sponsor-color3 {
+    color: rgba(207, 17, 38);
+}
+
+.perks {
+    padding: 1%;
+}
+
+/* Bullet Lists */
+.sponsor-bullets,
+.sponsor-bullets2,
+.sponsor-bullets3 {
+    list-style-type: disc;
+    padding-left: 1.5em;
+    margin: 1em auto;
+    max-width: 800px;
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+.sponsor-bullets li,
+.sponsor-bullets2 li,
+.sponsor-bullets3 li {
+    margin-bottom: 1em;
+}
+
+/* Section Backgrounds */
+.sponsor-bullets {
+    background-image: url('Sponsor.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 10%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.sponsor-bullets2 {
+    background-image: url('Sponsor1.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 10%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.sponsor-bullets3 {
+    background-image: url('Sponsor3.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 10%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Product Card */
+.product {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+/* Form & Buttons */
+form {
+    max-width: 600px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: rgba(0, 99, 65);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: rgba(0, 99, 65)
+}
+
+.lessons h1{
+    text-align: center;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.lessons p{
+    text-align: center;
+    padding: .5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.lessons-section-home, .lessons-section-gym, .lessons-section-virtual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2%
+}
+
+.lessons-section-home p, .lessons-section-gym p, .lessons-section-virtual p{
+    padding: 2%;
+
+}
+
+.package {
+    width: 80%; /* or a fixed width like 300px */
+    max-width: 500px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ac0909;
+}
